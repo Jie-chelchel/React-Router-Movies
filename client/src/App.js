@@ -13,7 +13,6 @@ export default function App() {
       axios
         .get("http://localhost:5000/api/movies") // Study this endpoint with Postman
         .then((response) => {
-          console.log(response.data);
           setMovieList(response.data);
           // Study this response with a breakpoint or log statements
           // and set the response data as the 'movieList' slice of state
